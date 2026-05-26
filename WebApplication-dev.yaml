@@ -1,0 +1,9 @@
+apiVersion: kro.run/v1alpha1
+kind: WebApplication
+metadata:
+  name: my-app
+  namespace: dev-team
+spec:
+  name: my-app-eks-masterclass-20260526
+  image: nginx:1.30
+  replicas: 3
