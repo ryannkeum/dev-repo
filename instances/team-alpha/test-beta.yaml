@@ -5,7 +5,7 @@ metadata:
   name: team-beta-role-selector
   namespace: ack-system          # Created in the ACK system namespace
 spec:
-  roleARN: arn:aws:iam::962765735148:role/ACK-TeamA-Role
+  arn: arn:aws:iam::962765735148:role/ACK-TeamA-Role
   namespaceSelector:
     matchLabels:
       team: team-beta            # Apply this role to namespaces with this label
