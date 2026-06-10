@@ -1,0 +1,11 @@
+apiVersion: kro.run/v1alpha1
+kind: WebApplication
+metadata:
+  name: my-webapp
+  namespace: team-alpha
+spec:
+  appName: my-webapp
+  image: nginx
+  replicas: 2
+  bucketName: my-webapp-nkeum-assets-prod-20260610   # Must be globally unique S3 name
+  region: ap-northeast-2
