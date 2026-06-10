@@ -8,4 +8,4 @@ spec:
   image: nginx
   replicas: 2
   bucketName: my-webapp-nkeum-assets-prod-20260610   # Must be globally unique S3 name
-  region: ap-northeast-2
+  region: eu-west-1
