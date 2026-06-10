@@ -7,8 +7,9 @@ metadata:
 spec:
   arn: arn:aws:iam::962765735148:role/ACK-TeamA-Role
   namespaceSelector:
-    matchLabels:
-      team: team-beta            # Apply this role to namespaces with this label
+    labelSelector:
+      matchLabels:
+        team: team-beta            # Apply this role to namespaces with this label
 ---
 # After IAMRoleSelector is configured — no annotation required
 apiVersion: dynamodb.services.k8s.aws/v1alpha1
